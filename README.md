@@ -1,10 +1,10 @@
 # testng-api-java
 
 Steps to setup
+<details>
+  <summary>Windows Setup</summary>
 
-1. Install Java 21
-
-- Windows Setup
+### Install Java 21
 - For windows using powershell run command :
 
 ```text
@@ -34,7 +34,7 @@ java -version
    OpenJDK Runtime Environment Temurin-21.0.6+7 (build 21.0.6+7-LTS)
 ```
 
-2. Setup Apache Maven:
+### Setup Apache Maven:
 
 - Visit the Apache Maven download page.
 - Download the Binary zip archive (e.g., apache-maven-3.x.x-bin.zip).
@@ -70,9 +70,33 @@ mvn -version
   </proxy>
 </proxies>
 ```
+### Setup Allure:
 
-3. Setup Google Java Style Guide configuration for IntelliJ IDEA
+- Install Scoop (if not already installed):
+```text
+iwr -useb get.scoop.sh | iex
+```
+- Install Allure:
+```text
+scoop install allure
+```
+- Check allure version
+```text
+allure --version
+```
+- Restart IDEA and check allure version inside IDEA terminal again
+- Run any test case and check allure report with terminal command :
+```text
+allure serve target/allure-results
+```
 
+</details>
+
+<details>
+  <summary>Mac Setup</summary>
+</details>
+
+### Setup Google Java Style Guide configuration for IntelliJ IDEA
 - Go to File → Settings
   Navigate to Editor → Code Style.
   In the Code Style section, select Java from the language list.
