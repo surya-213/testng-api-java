@@ -149,8 +149,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>${maven.compiler-plugin.version}</version>
         <configuration>
-          <source>21</source>
-          <target>21</target>
+          <source>${maven.compiler.source}</source>
+          <target>${maven.compiler.target}</target>
           <encoding>${maven.compiler.encoding}</encoding>
           <showWarnings>true</showWarnings>
           <showDeprecation>true</showDeprecation>
